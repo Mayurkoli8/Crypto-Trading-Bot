@@ -159,16 +159,17 @@ ws://localhost:8000/ws
 This is the easiest way to test the entire system.
 
 ### 1. Clone the Repository
+```bash
 
 git clone https://github.com/Mayurkoli8/Crypto-Trading-Bot.git
 
 cd crypto-trading-bot
 
-
+```
 ### 2. Start Everything
-
+```bash
 docker-compose up --build
-
+```
 
 This will start:
 - PostgreSQL database
