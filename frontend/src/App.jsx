@@ -37,9 +37,9 @@ function App() {
           ...prev
         ]);
       }
-      fetchTrades();
+      
     };
-    
+    fetchTrades();
       
     return () => ws.close();
   }, []);

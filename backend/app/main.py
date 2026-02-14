@@ -22,7 +22,8 @@ app.add_middleware(
 async def startup():
     Base.metadata.create_all(bind=engine)
     asyncio.create_task(trade_engine())
-
+    asyncio.create_task(price_stream())
+    
 
 app.include_router(trade.router)
 app.include_router(user.router)
